@@ -1,0 +1,54 @@
+body {
+    margin: auto;
+    padding: 0;
+}
+header {
+    margin: auto;
+    width: 100%;
+    max-width: 54.375em;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.875em;
+}
+
+.logo {
+    a {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+.navigation {
+
+    width:30.6%;
+    margin-right: 1.875em;
+
+    a {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        width: 100%;
+        flex-basis: 1;
+        padding: 0;
+        margin: 0;
+        li {
+            margin: 5%;
+        }
+    }
+}

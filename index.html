@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The Area for Responsive smoothness! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize the CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My own beautiful S=( CSS ) -->
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/26aa5150aa.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Responsive - in - Japan</title>
+</head>
+<body>
+    <!-- Header section with Logo and Navigation bar!  -->
+    <header>
+        <div class="header__container">
+            <div class="logo"><a href="./index.html"><img src="./images/logo.svg" alt="Logo of the page"></a></div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li> <a href="#"><i class="fa-solid fa-ellipsis"></i></a></li>
+                </ul>
+            </nav>
+            <div class="secret__icon"><a href="#"><i class="fa-solid fa-ellipsis"></i></a></div>
+        </div>
+    </header>
+    <main>
+        <!-- Text Section -->
+        <section>
+            <div class="text">
+                <h1>Japan</h1>
+                <h5>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</h5>
+            </div>
+        </section>
+
+        <!-- Picture Section -->
+        <section>
+            <div class="image">
+                <picture>
+                    <source media="(min-width: 320px) and (max-width: 480px)" srcset="./images/mount_fuji_s.svg">
+                    <source media="(min-width: 480px) and (max-width: 805px)" srcset="./images/mount_fuji_m.svg">
+                    <source media="(min-width: 805px)" srcset="./images/mount_fuji_l.svg">
+                    <img src="./images/mount_fuji_s.svg" alt="Picture of Mount Fuji">
+                </picture>
+            </div>         
+        </section>
+    </main>
+</body>
+</html>
