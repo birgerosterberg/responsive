@@ -3,11 +3,16 @@ main {
     margin: auto;
 }
 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
     text-align: center;
-    margin: 1.25em;
+    margin: auto;
     margin-top: 8.45em;
-    
+    max-width: 35.875em;
+    width: 100%;
+    // max-width: 870px;
 
     h1 {
         font-family: 'Poppins';
@@ -31,74 +36,107 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom: 0%;
+
 }
 
 //
-// Media Queries for text and navigation......
+// Media Queries for whole page!......
 //
 //MOBILE
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    // Hiding navigation at mobile size!
     .navigation {
         display: none;
     }
+    // This icon needs to be shown a bit!
     .secret__icon {
         display: flex;
-        color: #242635;
         a {
             text-decoration: none;
             color: white;
         }
     }
     .text {
-
+        width: 13.5625em;
+        margin-top: 4em;
         h1 {
             font-size: 36px;
             line-height: 40px;
             text-align: center;
-            letter-spacing: -0.8px;    
+            letter-spacing: -0.8px;   
+            margin-top: 0;
+            margin-bottom: 27px; 
         }
         h5 {
             font-size: 12px;
             line-height: 18px;
+            margin-top: 0;
+            // Margin bottom gets 0 due to image margin-top is there!
+            margin-bottom: 0;
         }
     }
-
+    .image {
+        margin-top: 3.5625em;
+    }
+    .header__container {
+        margin-top: 0.6875em;
+        margin-left: 1.875em;
+        margin-right: 1.875em;    
+        
+    }
 }
 // TABLET
 @media screen and (min-width: 480px) and (max-width: 805px) {
+    // Hiding it in this size
     .secret__icon {
         display: none;
     }
     .text {
-
+        margin-top: 12.2em;
         h1 {
             font-size: 72px;
             line-height: 83px;  
             letter-spacing: -1.6px;
+            margin-bottom: 22px;
+            margin-top: 0;
         }
         h5 {
             font-size: 22px;
             line-height: 33px;
+            margin-bottom: 45px;
+            margin-top: 0;
         }
+    }
+
+    .header__container {
+        margin-left: 4.6875em;
+        margin-right: 4.6875em;
+        margin-top: 2.125em;
     }
 }
 // LAPTOP - TV - BIG SCREENZ
 @media screen and (min-width: 806px) {
+        // Hiding it in this size
     .secret__icon{
         display: none;
     }
     .text {
-
+        
         h1 {
             font-size: 84px;
             line-height: 102px;
             letter-spacing: -2px;
+            margin-bottom: 28px;
+            margin-top: 0;
         }
         h5 {
             font-size: 22px;
             line-height: 34px;
+            margin-bottom: 45px;
+            margin-top: 0;
         }
+    }
+    .header__container {
+        margin-top: 3.875em;
     }
 }
